@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Float With Overflow</title>
+        <style>
+            div.container{ /*부모*/
+                overflow: hidden; /*줄 전체를 사용하게 함(다른 요소들이 같은 줄에 침범하지 않음)*/
+            }
+
+            div.item{ /*자손*/
+                float:left; /*블록 형식으로 설정*/
+                margin: 0 3px;
+                padding: 10px;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item">메뉴 -  1</div>
+            <div class="item">메뉴 -  2</div>
+            <div class="item">메뉴 -  3</div>
+            <div class="item">메뉴 -  4</div>
+        </div>
+    </body>
+</html>

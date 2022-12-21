@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fixed Bar</title>
+        <style>
+            .container { /*본문이 가리지 않기 위해 bar 크기 만큼 띄워놓는다.*/
+                margin-top: 50px;
+                margin-left: 50px;
+            }
+            .top_bar{
+                background: red;
+                position: fixed;
+                left: 0; top: 0; right: 0;
+                height: 50px;
+            }
+            .left_bar{
+                background: blue;
+                position: fixed;
+                left: 0; top: 50px; bottom: 0;
+                width: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top_bar"></div>
+        <div class="left_bar"></div>
+        <div class="container">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, veniam? Sit, totam enim iste, in, minus obcaecati provident sed labore non sunt repellat ducimus at dolorum assumenda doloribus dolore quia.</p>
+            <p>sdfejrjfeo jgjr gjrog ijrg jr</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, impedit magni! Veniam quod omnis aliquam quisquam exercitationem eveniet incidunt quae vel voluptates, recusandae voluptas beatae, magni ex id minima iusto?</p>
+        </div>
+    </body>
+</html>

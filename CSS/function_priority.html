@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let 함수 = function () { alert('함수.A'); };
+            /*모든 코드를 읽기 전에 선언적 함수가 먼저 읽힌다. -> hoisting */
+            function 함수() { alert("함수.B"); };
+            
+            /*나중에 읽혀진 익명 함수가 실행된다.*/
+            함수();
+        </script>
+    </head>
+</html>
